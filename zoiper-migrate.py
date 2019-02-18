@@ -51,7 +51,7 @@ for contact in tree.xpath("/contacts/contact"):
     phone = contact.xpath("home_phone")[0].text
     normal = phone
     
-    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
+    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
  
     # Create Phone (work_phone)
     print "[*] Importing work's phone number..."
@@ -59,7 +59,7 @@ for contact in tree.xpath("/contacts/contact"):
     phone = contact.xpath("work_phone")[0].text
     normal = phone
     
-    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
+    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
 
    
     # Create Phone (cell_phone)
@@ -68,7 +68,7 @@ for contact in tree.xpath("/contacts/contact"):
     phone = contact.xpath("cell_phone")[0].text
     normal = phone
     
-    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
+    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
   
     # Create Phone (mail)
     print "[*] Importing email address..."
@@ -76,7 +76,7 @@ for contact in tree.xpath("/contacts/contact"):
     phone = contact.xpath("mail")[0].text
     normal = phone
     
-    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
+    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
 
     # Create Phone (fax_number)
     print "[*] Importing fax number..."
@@ -84,7 +84,7 @@ for contact in tree.xpath("/contacts/contact"):
     phone = contact.xpath("fax_number")[0].text
     normal = phone
     
-    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
+    cursor.execute("INSERT INTO Phone Values (NULL, ?, ?, ?, ?, NULL, NULL, NULL, NULL, NULL, NULL, NULL)", (contact_id, phone_type, phone, normal))
 
     db.commit()
 
